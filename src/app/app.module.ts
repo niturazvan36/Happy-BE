@@ -6,6 +6,7 @@ import {ButtonModule} from 'primeng/button';
 
 import {MenubarModule} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';
+import {ImageModule} from 'primeng/image';
 @NgModule({
   declarations: [
     AppComponent
@@ -14,6 +15,7 @@ import {MenuItem} from 'primeng/api';
     BrowserModule,
     ButtonModule,
     MenubarModule,
+    ImageModule
 
   ],
   providers: [],
