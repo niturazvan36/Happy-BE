@@ -7,21 +7,10 @@ import {MenuItem} from "primeng/api";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Happy-BE';
-  public items: MenuItem[] = [];
+  title = 'Happy-FE';
 
-  ngOnInit() {
-    this.items = [{
-      label: 'Happy Dashboard',
-    },
-      {
-        label: 'Register',
-
-      },
-      {
-        label: 'Login',
-      },
-
-    ];
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
   }
+
 }

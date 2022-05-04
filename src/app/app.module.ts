@@ -7,6 +7,9 @@ import {ButtonModule} from 'primeng/button';
 import {MenubarModule} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';
 import {ImageModule} from 'primeng/image';
+
+import {TabMenuModule} from 'primeng/tabmenu';
+import {TabViewModule} from 'primeng/tabview';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +18,9 @@ import {ImageModule} from 'primeng/image';
     BrowserModule,
     ButtonModule,
     MenubarModule,
-    ImageModule
+    ImageModule,
+    TabMenuModule,
+    TabViewModule
 
   ],
   providers: [],

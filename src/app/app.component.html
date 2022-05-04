@@ -1,35 +1,50 @@
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#poll">Create Poll</a></li>
+  <li><a href="#page">Happiness Dashboard</a></li>
+
+</ul>
+
+      <div #home id="home" class="DescArea"><br>
+        <div class="descTitle">
+          <h1 class="MenuTitle">
+            Welcome to the Happiness Dashboard</h1><br>
+          <p class="desc">The application is a dashboard for visualizing how
+            a team feels about certain topics.
+            The application provides the possibility to create
+            different polls on which users can vote
+            anonymously.
+            The users are able to submit how they feel about a
+            topic on a configurable scale along with a
+            comment.
+            For each poll, the application provides helpful
+            graphics to analyze the results of the survey.</p>
+
+          <p class="desc">
+           <span class="tab"> Collaborators:</span>
+            < Balint Cristi >
+
+           < Popescu Ionut >
+           < Nitu Razvan >
+          < Szabo Stefan ></p>
+          <a class="sbutton" (click)="scroll(page)">Get started</a>
+          <a class="sbutton" (click)="scroll(poll)">Create poll</a>
+
+        </div></div>
+      <div #poll id="poll" class="polldiv">
+        <div class="contentArea">
+          <span class="details">Poll Title:</span>
+          <input class="intext" type="text"><br>
+          <span class="details">Poll description:</span>
+          <input class="intext1" type="text">
+        <a class="sbutton-pool">Submit poll</a>
+        </div>
+      </div>
+    <div #page id="page">
+
+      <div class="contentArea1">
+        Poll area
+      </div>
+    </div>
 
 
-<p-menubar [model]="items"></p-menubar>
-<div class="parent"><br>
-  <div class="DescArea"><br>
-    <div class="descTitle">
-      <h1 class="MenuTitle">
-        Welcome to the Happiness Dashboard</h1><br>
-      <p class="desc">The application is a dashboard for visualizing how
-        a team feels about certain topics
-        The application provides the possibility to create
-        different polls on which users can vote
-        anonymously.
-        The users are able to submit how they feel about a
-        topic on a configurable scale along with a
-        comment.
-        For each poll, the application provides helpful
-        graphics to analyze the results of the survey.</p>
-      <p class="desc">
-        Collaborators:<br>
-        <span class="tab">Balint Cristi</span>
-        <br>
-        <span class="tab">Popescu Ionut</span><br>
-        <span class="tab">Nitu Razvan</span><br>
-        <span class="tab">Szabo Stefan</span><br></p>
-      <p-button label="Getting Started"  ></p-button>
-    </div></div>
-
-  <div class="imageArea">
-
-   
-  </div>
-
-
-</div>
