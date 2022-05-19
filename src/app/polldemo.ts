@@ -6,9 +6,8 @@ import {DynamicDialogConfig} from 'primeng/dynamicdialog';
 
 @Component({
   template: `
-    <h5>Poll Title</h5>
     <span class="p-float-label">
-    <input id="float-input" type="text" pInputText>
+    <input id="float-input" type="text" [style]="{width:'80%'}" pInputText>
     <label for="float-input">Poll Title</label>
     </span>
     <br>
@@ -19,6 +18,5 @@ import {DynamicDialogConfig} from 'primeng/dynamicdialog';
     `
 })
 export class PollDemo {
-
 
 }

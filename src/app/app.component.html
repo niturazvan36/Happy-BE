@@ -3,3 +3,75 @@
 <button #btn type="button" pButton icon="pi pi-bars" label="Show" (click)="menu.toggle($event)"></button>
 <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
 
+<div class="main">
+<div class="poll">
+<h3>Poll title</h3><p-rating [(ngModel)]="val2" [cancel]="false"></p-rating>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit tempor urna eget rutrum.
+    Maecenas non venenatis justo. Integer gravida mi imperdiet nibh condimentum tincidunt.
+    Aliquam mattis blandit elit sit amet rhoncus. Fusce sit amet ex non augue accumsan commodo.
+    Etiam non aliquet libero. Etiam venenatis tellus tellus, nec elementum lectus dignissim volutpat.
+    Mauris vitae arcu nisi. Nullam eget urna a orci iaculis feugiat.
+    Vestibulum varius risus sit amet aliquet placerat. Morbi luctus convallis massa at mollis.
+  </p><br>
+  <p-fieldset legend="Comment section" [toggleable]="true">
+      <span class="p-float-label">
+    <input id="float-input" type="text" [style]="{width:'750px'}"  pInputText >
+    <label for="float-input">Add comment...</label>
+    </span>
+    <div class="comment">
+      <h5 class="user">Username</h5>
+      <h5 class="time">TimeStamp</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit tempor urna eget rutrum.</p>
+    </div>
+    <div class="comment">
+      <h5 class="user">Username</h5>
+      <h5 class="time">TimeStamp</h5>
+      <p> Maecenas non venenatis justo. Integer gravida mi imperdiet nibh condimentum tincidunt.</p>
+    </div>
+    <div class="comment">
+      <h5 class="user">Username</h5>
+      <h5 class="time">TimeStamp</h5>
+      <p>Aliquam mattis blandit elit sit amet rhoncus. Fusce sit amet ex non augue accumsan commodo.</p>
+    </div>
+  </p-fieldset>
+</div>
+  <div class="poll">
+    <h3>Poll title</h3><p-rating [(ngModel)]="val2" [cancel]="false"></p-rating>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit tempor urna eget rutrum.
+      Maecenas non venenatis justo. Integer gravida mi imperdiet nibh condimentum tincidunt.
+      Aliquam mattis blandit elit sit amet rhoncus. Fusce sit amet ex non augue accumsan commodo.
+      Etiam non aliquet libero. Etiam venenatis tellus tellus, nec elementum lectus dignissim volutpat.
+      Mauris vitae arcu nisi. Nullam eget urna a orci iaculis feugiat.
+      Vestibulum varius risus sit amet aliquet placerat. Morbi luctus convallis massa at mollis.
+    </p><br>
+    <p-fieldset legend="Comment section" [toggleable]="true">
+      <span class="p-float-label">
+    <input id="float-input" type="text" [style]="{width:'750px'}"  pInputText >
+    <label for="float-input">Add comment...</label>
+    </span>
+    </p-fieldset>
+  </div>
+
+  <div class="poll">
+    <h3>Poll title</h3><p-rating [(ngModel)]="val2" [cancel]="false"></p-rating>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit tempor urna eget rutrum.
+      Maecenas non venenatis justo. Integer gravida mi imperdiet nibh condimentum tincidunt.
+      Aliquam mattis blandit elit sit amet rhoncus. Fusce sit amet ex non augue accumsan commodo.
+      Etiam non aliquet libero. Etiam venenatis tellus tellus, nec elementum lectus dignissim volutpat.
+      Mauris vitae arcu nisi. Nullam eget urna a orci iaculis feugiat.
+      Vestibulum varius risus sit amet aliquet placerat. Morbi luctus convallis massa at mollis.
+    </p><br>
+    <p-fieldset legend="Comment section" [toggleable]="true">
+      <span class="p-float-label">
+    <input id="float-input" type="text" [style]="{width:'750px'}"  pInputText >
+    <label for="float-input">Add comment...</label>
+    </span>
+    </p-fieldset>
+
+  </div>
+</div>
+
+

@@ -12,6 +12,10 @@ import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { DialogModule } from 'primeng/dialog';
 import { ToastModule } from 'primeng/toast';
 import { TableModule } from 'primeng/table';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {RatingModule} from 'primeng/rating';
+import { FormsModule } from '@angular/forms';
+import {FieldsetModule} from 'primeng/fieldset';
 @NgModule({
   imports: [
     BrowserModule,
@@ -21,7 +25,12 @@ import { TableModule } from 'primeng/table';
     DynamicDialogModule,
     ToastModule,
     TableModule,
-    HttpClientModule
+    HttpClientModule,
+    ScrollPanelModule,
+    RatingModule,
+    FormsModule,
+    FieldsetModule
+
   ],
   declarations: [ AppComponent ,PollDemo],
   bootstrap:    [ AppComponent ],

@@ -9,9 +9,12 @@ import {DynamicDialogRef} from 'primeng/dynamicdialog';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  providers: [DialogService, MessageService]
+  providers: [DialogService, MessageService],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  val2: number;
+  msg: string;
   items: MenuItem[];
 
   ngOnInit() {
