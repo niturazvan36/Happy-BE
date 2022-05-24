@@ -28,8 +28,8 @@ import {FieldsetModule} from 'primeng/fieldset';
     HttpClientModule,
     ScrollPanelModule,
     RatingModule,
-    FormsModule,
-    FieldsetModule
+    FieldsetModule,
+    FormsModule
 
   ],
   declarations: [ AppComponent ,PollDemo],

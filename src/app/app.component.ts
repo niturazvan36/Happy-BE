@@ -3,17 +3,24 @@ import {MenuItem} from 'primeng/api';
 
 import {MessageService} from 'primeng/api';
 import {PollDemo} from './polldemo';
+import {GRDemo} from './grdemo'
 import {Poll} from './poll';
 import {DialogService} from 'primeng/dynamicdialog';
 import {DynamicDialogRef} from 'primeng/dynamicdialog';
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   providers: [DialogService, MessageService],
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+
 })
 export class AppComponent {
+  val1: number;
   val2: number;
+  val3: number;
   msg: string;
   items: MenuItem[];
 
@@ -37,6 +44,7 @@ export class AppComponent {
         icon:'pi pi-fw pi-power-off'
       }
     ];
+
   }
 
   constructor(public dialogService: DialogService, public messageService: MessageService) {}
@@ -56,9 +64,21 @@ export class AppComponent {
       }
     });
   }
-  ngOnDestroy() {
-    if (this.ref) {
-      this.ref.close();
-    }
+
+  showGr() {
+    this.ref = this.dialogService.open(GRDemo, {
+      header: 'Poll Chart',
+      width: '70%',
+      contentStyle: {"max-height": "500px", "overflow": "auto"},
+      baseZIndex: 10000
+    });
+
+    this.ref.onClose.subscribe((product: Poll) =>{
+      if (product) {
+        this.messageService.add({severity:'info', summary: 'Product Selected', detail: product.name});
+      }
+    });
   }
+
+
 }
