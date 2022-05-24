@@ -5,8 +5,17 @@
 
 <div class="main">
 <div class="poll">
-<h3>Poll title</h3><p-rating [(ngModel)]="val1" [cancel]="false"></p-rating>
-  <button type="button" (click)="showGr()" pButton icon="pi pi-info-circle" label="Chart"></button>
+<h3>Poll title</h3><p-rating [(ngModel)]="val1" [cancel]="false"></p-rating><br>
+  <p-button (click)="showPositionDialog('top')" icon="pi pi-arrow-down" label="Chart" styleClass="p-button"></p-button>
+  <p-dialog header="Poll rating" [(visible)]="displayPosition" [position]="position" [modal]="true" [style]="{width: '35%'}"
+            [draggable]="false" [resizable]="false">
+    <p-chart type="pie" [data]="data" [options]="chartOptions"  [style]="{width: '100px' ,height:'100px'}"></p-chart>
+
+
+    <ng-template pTemplate="footer">
+      <p-button icon="pi pi-check" (click)="displayPosition=false" label="Ok" styleClass="p-button-text"></p-button>
+    </ng-template>
+  </p-dialog>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit tempor urna eget rutrum.
     Maecenas non venenatis justo. Integer gravida mi imperdiet nibh condimentum tincidunt.

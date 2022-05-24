@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent }   from './app.component';
 import { PollDemo } from './polldemo';
+import { GRDemo } from './grdemo'
 import { PollService } from './pollservice';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { ButtonModule } from 'primeng/button';
@@ -16,6 +17,8 @@ import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {RatingModule} from 'primeng/rating';
 import { FormsModule } from '@angular/forms';
 import {FieldsetModule} from 'primeng/fieldset';
+import {ChartModule} from 'primeng/chart';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -29,13 +32,16 @@ import {FieldsetModule} from 'primeng/fieldset';
     ScrollPanelModule,
     RatingModule,
     FieldsetModule,
-    FormsModule
+    ChartModule,
+    FormsModule,
+    DialogModule
 
   ],
-  declarations: [ AppComponent ,PollDemo],
+  declarations: [ AppComponent ,PollDemo, GRDemo],
   bootstrap:    [ AppComponent ],
   entryComponents: [
-    PollDemo
+    PollDemo,
+    GRDemo
   ],
   providers: [PollService]
 })
